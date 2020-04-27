@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Shop Modern Kitchen</title>
+    <link href="order.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="order.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar" id="navnav">
+        <a href="/" class="logo"> Modern Kitchen </a>
+        <a href="/">HOME</a>
+        <a href="/#shop">SHOP</a>
+        <a class="navbar-cart" href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- END OF NAVBAR -->
+
+    <!-- ORDER SECTION -->
+
+    <div class="order-page">
+        <div class="column1">
+            <div class="form">
+                <h1>ORDER FORM</h1>
+                <br>
+                <form action="" onsubmit="return validForm()">
+                    <div class="forms">
+                        <div class="left-column">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="right-column">
+                            <input type="text" id="fname" name="firstname" required placeholder="Your name..">
+                            <p id="fnameText" class="form-error-text"></p>
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <div class="left-column">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="right-column">
+                            <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
+                            <p id="lnameText" class="form-error-text"></p>
+
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <div class="left-column">
+                            <label for="address">Address</label>
+                        </div>
+                        <div class="right-column">
+                            <input type="text" id="address" name="address1" placeholder="Your address..">
+                            <p id="addressText" class="form-error-text"></p>
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <div class="left-column">
+                            <label for="number">Phone Number</label>
+                        </div>
+                        <div class="right-column">
+                            <input type="text" id="number" name="phone-number" placeholder="Your phone number.."
+                                onkeypress="javascript:return validPhoneNumber(event)">
+                            <p id="numberText" class="form-error-text"></p>
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <div class="left-column">
+                            <label for="mail">E-mail</label>
+                        </div>
+                        <div class="right-column">
+                            <input type="text" id="mail" name="e-mail" required placeholder="Your e-mail..">
+                            <p id="mailText" class="form-error-text"></p>
+                        </div>
+                    </div>
+
+                    <div class="forms" style="float: left;">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div class="order-summary">
+
+                <div class="product">
+                    <a href="product3.html">
+                        <img class="picture" src="/images/product3.jpg">
+                    </a>
+                    <h2 class="product-title">GLOSS</h2>
+                    <p class="product-title">QUANTITY: 1</p>
+                    <h2 class="price" style="float: right;">$900</h2>
+                </div>
+
+                <div class="product">
+                    <a href="product1.html">
+                        <img class="picture" src="/images/product1.jpg">
+                    </a>
+                    <h2 class="product-title">AMBYS</h2>
+                    <p class="product-title">QUANTITY: 1</p>
+                    <h2 class="price" style="float: right;">$599</h2>
+                </div>
+
+                <div class="product">
+                    <a href="product6.html">
+                        <img class="picture" src="/images/product6.jpg">
+                    </a>
+                    <h2 class="product-title">FABIAN</h2>
+                    <p class="product-title">QUANTITY: 1</p>
+                    <h2 class="price" style="float: right;">$784</h2>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="total-price">
+                    <p class="item">SUBTOTAL</p>
+                    <p class="item" style="float: right;">$2 283</p>
+                    <br>
+                    <br>
+                    <p class="item2">TAX</p>
+                    <p class="item2" style="float: right;">$148</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="total">TOTAL COST</h2>
+                    <h2 class="total" style="float: right;">$2 431</h2>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- END OF ORDER SECTION -->
+
+
+</body>
+
+</html>

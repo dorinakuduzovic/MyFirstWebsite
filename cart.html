@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Shop Modern Kitchen</title>
+    <link href="cart.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="cart.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar" id="navnav">
+        <a href="/" class="logo"> Modern Kitchen </a>
+        <a href="/">HOME</a>
+        <a href="/#shop">SHOP</a>
+        <a class="navbar-cart" href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- END OF NAVBAR -->
+
+    <!-- CART -->
+
+    <div class="cart-page">
+        <div class="column1">
+            <div class="cart">
+                <div class="cart-title">
+                    <h1>CART</h1>
+                    <br>
+                    <hr>
+                </div>
+
+                <div class="product">
+                    <a href="product3.html">
+                        <img class="picture" src="/images/product3.jpg">
+                    </a>
+                    <h2 class="products">GLOSS</h2>
+                    <form class="products">
+                        <div class="value-button" id="decrease" onclick="decreaseValue(0)" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number0" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue(0)" value="Increase Value">+
+                        </div>
+                    </form>
+                    <h2 class="products">$900</h2>
+                    <button class="close-btn"><i class="fa fa-close"></i></button>
+                </div>
+
+                <div class="product">
+                    <a href="product1.html">
+                        <img class="picture" src="/images/product1.jpg">
+                    </a>
+                    <h2 class="products">AMBYS</h2>
+                    <form class="products">
+                        <div class="value-button" id="decrease" onclick="decreaseValue(1)" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number1" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue(1)" value="Increase Value">+
+                        </div>
+                    </form>
+                    <h2 class="products">$599</h2>
+                    <button class="close-btn"><i class="fa fa-close"></i></button>
+                </div>
+
+                <div class="product">
+                    <a href="product6.html">
+                        <img class="picture" src="/images/product6.jpg">
+                    </a>
+                    <h2 class="products">FABIAN</h2>
+                    <form class="products">
+                        <div class="value-button" id="decrease" onclick="decreaseValue(2)" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number2" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue(2)" value="Increase Value">+
+                        </div>
+                    </form>
+                    <h2 class="products">$784</h2>
+                    <button class="close-btn"><i class="fa fa-close"></i></button>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div class="order">
+                <h1 class="order-title">YOUR ORDER</h1>
+                <br>
+                <br>
+                <p class="item">3 PRODUCTS</p>
+                <p class="item" style="float: right;">$2 283</p>
+                <br>
+                <br>
+                <p class="item2">TAX</p>
+                <p class="item2" style="float: right;">$148</p>
+                <br>
+                <br>
+                <br>
+                <h2 class="total">TOTAL COST</h2>
+                <h2 class="total" style="float: right;">$2 431</h2>
+                <br>
+                <br>
+                <br>
+                <button class="button" style="float: right;"
+                    onclick="window.location.href = 'order.html';">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <!-- END OF CART -->
+
+
+
+
+</body>
+
+</html>

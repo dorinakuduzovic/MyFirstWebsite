@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Modern Kitchen Store</title>
+    <link href="home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="navbar.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar" id="navnav">
+        <a href="#home" class="logo"> Modern Kitchen </a>
+        <a href="#home">HOME</a>
+        <a href="#shop">SHOP</a>
+
+        <a class="navbar-cart" href="cart.html"> <i class="fa fa-shopping-cart"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- END OF NAVBAR -->
+
+    <!-- HEADER -->
+
+    <div class="hero" id="home">
+        <div class="hero-text">
+            <h1>MODERN KITCHEN</h1>
+            <br>
+            <a class="button" href="#shop">SHOP NOW</a>
+        </div>
+    </div>
+
+    <!-- END OF HEADER -->
+
+    <!-- PRODUCTS -->
+    <div class="product-section" id="shop">
+        <div class="product-text">
+            <br>
+            <h1>OUR PRODUCTS</h1>
+        </div>
+        <div class="products">
+
+            <div class="product1">
+                <img src="/images/product1.jpg" />
+                <div class="product-hover-text">
+                    <h2>AMBYS $599</h2>
+                    <button class="button" onclick="window.location.href = 'product1.html';"> SEE MORE</button>
+                </div>
+            </div>
+
+            <div class="product2">
+                <img src="/images/product2.jpg" />
+                <div class="product-hover-text">
+                    <h2>NINA $862</h2>
+                    <button class="button" onclick="window.location.href = 'product2.html';">SEE MORE</button>
+                </div>
+            </div>
+
+            <div class="product3">
+                <img src="/images/product3.jpg" />
+                <div class="product-hover-text">
+                    <h2>GLOSS $900</h2>
+                    <button class="button" onclick="window.location.href = 'product3.html';">SEE MORE</button>
+                </div>
+            </div>
+
+            <div class="product4">
+                <img src="/images/product4.jpg" />
+                <div class="product-hover-text">
+                    <h2>EMMA $990</h2>
+                    <button class="button" onclick="window.location.href = 'product4.html';">SEE MORE</button>
+                </div>
+            </div>
+
+            <div class="product5">
+                <img src="/images/product5.jpg" />
+                <div class="product-hover-text">
+                    <h2>SNOW WHITE $999</h2>
+                    <button class="button" onclick="window.location.href = 'product5.html';">SEE MORE</button>
+                </div>
+            </div>
+
+            <div class="product6">
+                <img src="/images/product6.jpg" />
+                <div class="product-hover-text">
+                    <h2>FABIAN $784</h2>
+                    <button class="button" onclick="window.location.href = 'product6.html';">SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- END OF PRODUCTS -->
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer">
+            <p>
+                &copy; 2020, All Rights Reserved, Developed By Dorina Kuduzovic
+            </p>
+        </div>
+    </footer>
+
+    <!--END OF FOOTER-->
+
+</body>
+
+</html>
